@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1340
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBR__Group_Test", "HBR__Group_Test\HBR__Group_Test.csproj", "{52584851-E171-4A4E-B988-7562E4BE4DC9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceExerciseHBRgroup", "WebServiceExerciseHBRgroup\WebServiceExerciseHBRgroup.csproj", "{1285E4C0-5C4F-4269-8602-A068A516DE3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{52584851-E171-4A4E-B988-7562E4BE4DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52584851-E171-4A4E-B988-7562E4BE4DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52584851-E171-4A4E-B988-7562E4BE4DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52584851-E171-4A4E-B988-7562E4BE4DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1285E4C0-5C4F-4269-8602-A068A516DE3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1285E4C0-5C4F-4269-8602-A068A516DE3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1285E4C0-5C4F-4269-8602-A068A516DE3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1285E4C0-5C4F-4269-8602-A068A516DE3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1D76FD53-8F18-4537-B55F-C1982793E805}
+		SolutionGuid = {0E08BB1F-A163-4430-A18F-7DEA49B2AE8B}
 	EndGlobalSection
 EndGlobal
