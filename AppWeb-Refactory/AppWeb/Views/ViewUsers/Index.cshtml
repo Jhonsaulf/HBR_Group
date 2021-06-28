@@ -1,0 +1,50 @@
+﻿@model List<AppWeb.Models.ProductPojo>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUsers.cshtml";
+}
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+    <br />
+
+    <div class="jumbotron text-center" style="background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);    ">
+        <h2>Make your next great purchase here!</h2>
+    </div>
+    <div>
+        <form class="form-inline my-2 my-lg-0 text-right">
+            <div class="text-right">
+                <input class="form-control mr-sm-2" type="search" name="itemtxt" placeholder="Search for category" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" value="Search" name="searchitem" type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+    <br />
+    <div style="display:flex; justify-content:space-between; flex-direction:row; flex-wrap:wrap; justify-self:self-start;">
+        @if (Model == null || Model.Count == 0)
+        {
+            <div class="text-center">
+                <h3>No items</h3>
+            </div>
+        }
+        @foreach (var item in Model)
+        {
+            <div class="card border-primary mb-3 text-center" style="width:350px;">
+                <div class="card-body"><h5>@item.FullName</h5></div>
+                <div class="card-body">
+                    <p class="card-text">Category of this product</p>
+                    <p class="card-text">@item.Category</p>
+                </div>
+                <div class="card-footer">
+                    <p>Price: $@item.Price</p>
+                    <div class="text-right">
+                        @Html.ActionLink("Buy", "BuyProduct", new { id = item.ProductId }, new { @class = "btn btn-outline-success" })
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</body>
+
